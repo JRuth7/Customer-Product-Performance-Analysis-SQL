@@ -1,117 +1,114 @@
-# Customer & Product Performance Analysis Using SQL
-Analyzed 9,694 retail sales transactions using MySQL to evaluate revenue performance, customer behavior, profitability trends, and return-related business impact.
+# Customer Product Performance Analysis (SQL)
 
-Project Overview
-- This project analyzes 9,694 retail sales transactions using MySQL to evaluate customer purchasing behavior, product performance, profitability trends, and         return-related business impact. The objective was to derive actionable business insights from transactional sales data and demonstrate practical SQL skills used   in business analytics.
+## Project Overview
 
+This project analyzes retail sales and returns data from the Superstore dataset using SQL.
 
-Dataset
-- The analysis was performed using the Superstore retail dataset containing:
-(1) Orders data
-(2) Returns data
-
-Dataset Size
-* Total Records Analyzed: **9,694**
-* Tables Used: **Orders, Returns**
-
-
-Tools & Technologies
-
-* MySQL Workbench
-* SQL
-* Microsoft Excel
-
-SQL Skills Applied
-
-* SELECT
-* GROUP BY
-* ORDER BY
-* LIMIT
-* COUNT()
-* SUM()
-* ROUND()
-* INNER JOIN
-
-# Key Business Analyses & Insights
-
-### Revenue by Category
-
-**Objective:** Calculate total sales across product categories.
-
-**Key Finding:** Technology generated the highest revenue at **$835.9K**, contributing the largest share of category sales.
+The objective was to identify key revenue drivers, profitability trends, regional performance, and the financial impact of product returns through business-focused SQL analysis.
 
 ---
 
-### Regional Sales Performance
+## Dataset
 
-**Objective:** Analyze revenue distribution across regions.
+Source: Superstore Sales Dataset
 
-**Key Finding:** The **West region** generated the highest sales revenue (**$713.5K**), indicating stronger market performance compared to other regions.
+Tables Used:
+- Orders
+- Returns
 
----
-
-### Top Performing Products
-
-**Objective:** Identify products contributing the highest sales revenue.
-
-**Key Finding:** The **Canon imageCLASS 2200 Advanced Copier** generated over **$61.6K** in sales, making it the highest-revenue product in the dataset.
+Total Records Analyzed:
+- 9,694 Orders
 
 ---
 
-### High-Value Customer Analysis
+## Business Questions & Insights
 
-**Objective:** Identify customers contributing the most revenue.
+### 1. Revenue by Category
 
-**Key Finding:** **Sean Miller** generated over **$25K** in total sales, highlighting the importance of customer retention strategies.
+**Question:** Which product category generates the most revenue?
 
----
-
-### Category Profitability Analysis
-
-**Objective:** Compare profitability across product categories.
-
-**Key Finding:** Technology generated the highest profit (**$145.4K**), while Furniture generated significantly lower profit despite strong sales performance.
+**Insight:**
+Technology generated approximately **$836K** in revenue, making it the highest-performing category by sales.
 
 ---
 
-### State Profitability Analysis
+### 2. Profit by Category
 
-**Objective:** Identify the most and least profitable states.
+**Question:** Which category contributes the most profit?
 
-**Key Finding:** California generated the highest profit (**$74.7K**), while Texas recorded the largest loss (**-$25.5K**).
-
----
-
-### Product Return Analysis (SQL JOIN)
-
-**Objective:** Analyze return patterns by combining Orders and Returns datasets using SQL JOIN operations.
-
-**Key Finding:** Office Supplies recorded the highest number of returned orders (**450 returns**), indicating potential opportunities to improve product quality and customer satisfaction.
+**Insight:**
+Technology produced approximately **$145K** in profit, significantly outperforming Furniture and Office Supplies.
 
 ---
 
-### Financial Impact of Returns
+### 3. Sales by Region
 
-**Objective:** Quantify revenue associated with returned orders.
+**Question:** Which region drives the highest sales?
 
-**Key Finding:** Returned orders accounted for approximately **$177.2K** in sales value, demonstrating the financial impact of product returns.
-
----
-
-### Return-Driven Profitability Risk
-
-**Objective:** Identify returned products contributing the highest losses.
-
-**Key Finding:** The **GBC DocuBind P400 Electric Binding System** generated approximately **-$3.7K** in profit among returned products, highlighting a potential profitability risk.
+**Insight:**
+The West region generated approximately **$713K** in sales, making it the strongest-performing region.
 
 ---
 
-## Business Impact
+### 4. Category Wise Returns
 
-This analysis helped identify:
+**Question:** Which categories experience the highest number of returns?
 
-* High-revenue product categories and products
-* High-value customers
-* Profitable and loss-making regions
-* Revenue loss associated with product returns
-* Products contributing to profitability risk
+**Insight:**
+Office Supplies recorded **450 returned orders**, nearly three times more than Technology.
+
+---
+
+### 5. Product Return Analysis
+
+**Question:** Which products are returned most frequently?
+
+**Insight:**
+KI Adjustable-Height Table and Staple Envelope recorded the highest return frequency, with **4 returns each**.
+
+---
+
+### 6. Return Sales Value
+
+**Question:** What is the total revenue impacted by returned orders?
+
+**Insight:**
+Returned orders accounted for approximately **$177K** in sales value, highlighting a significant revenue recovery risk.
+
+---
+
+### 7. Return-Driven Profitability Risk
+
+**Question:** Which returned products generate the greatest profit losses?
+
+**Insight:**
+The GBC DocuBind P400 Electric Binding System generated the highest profit loss from returns at approximately **-$3.7K**.
+
+---
+
+## SQL Concepts Used
+
+- Aggregate Functions (SUM, COUNT)
+- GROUP BY
+- ORDER BY
+- INNER JOIN
+- Data Aggregation
+- Business Performance Analysis
+- Return Impact Analysis
+
+---
+
+## Project Outcomes
+
+- Identified highest revenue-generating categories
+- Evaluated category-level profitability
+- Compared regional sales performance
+- Analyzed return behavior across categories
+- Quantified revenue lost through returns
+- Identified products creating the highest profitability risk
+
+---
+
+## Screenshots
+
+Project screenshots and query outputs are included in the repository for reference.
